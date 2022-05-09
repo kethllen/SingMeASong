@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# API SING ME A SONG 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sing me a song é uma aplicação para recomendação anômina de músicas. 
+Quanto mais as pessoas curtirem uma recomendação, maior a chance dela ser recomendada para outras pessoas 🙂
 
-## Available Scripts
+## 🚀 Começando
 
-In the project directory, you can run:
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-### `npm start`
+Consulte **Implantação** para saber como implantar o projeto.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📋 Pré-requisitos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Primeiro faça o clone deste repositorio e vamos intalar as depencias
 
-### `npm test`
+```
+npm i
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔧 Instalação
 
-### `npm run build`
+Agora vamos configurar as variaveis de ambiente seguindo o .env.example lembrando q este arquivo precisa estar na raiz do projeto.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Esse sera suas variaveis de ambiente para desenvolvimento ".env", aqui vc dira onde esta rodando sua api exeplo [API](https://github.com/kethllen/SingMeASong-Api) :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+REACT_APP_API_BASE_URL=http://localhost:5000
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## ⚙️ Executando os testes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Inicie o cypress ele ira abrir uma janela de testes não feche!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npx cypress open
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🔩 Analise os testes de ponta a ponta
 
-## Learn More
+Click em "end2end.spec.js" na janela do cypress que aberiu e ele iniciara os testes automaticamente
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## 📦 Desenvolvimento
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Para executar sertifique-se que o seu backend esta rodando [API](https://github.com/kethllen/SingMeASong-Api) seguindo os passos aqui descritos e execute o comando:
 
-### Analyzing the Bundle Size
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## 🛠️ Construído com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+* [Cypress](https://www.cypress.io/)
+* [Eslint](https://eslint.org/) 
+* [Prettier](https://www.npmjs.com/package/prettier) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## ✒️ Autores
 
-### `npm run build` fails to minify
+Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **Kethllen Andrey** - [Git hub kethllen](https://github.com/kethllen)
+
