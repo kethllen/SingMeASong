@@ -8,13 +8,15 @@ export default function useAsync(handler, immediate = true) {
   const act = (...args) => {
     setLoading(true);
     setError(null);
-    return handler(...args).then((data) => {
-      setData(data);
-      setLoading(false);
-    }).catch((error) => {
-      setError(error);
-      setLoading(false);
-    });
+    return handler(...args)
+      .then((data) => {
+        setData(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error);
+        setLoading(false);
+      });
   };
 
   useEffect(() => {
@@ -22,13 +24,13 @@ export default function useAsync(handler, immediate = true) {
       act();
     }
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line
   }, []);
 
   return {
     data,
     loading,
     error,
-    act
+    act,
   };
 }
